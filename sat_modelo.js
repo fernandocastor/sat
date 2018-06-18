@@ -5,7 +5,7 @@
  * Written by Fernando Castor in November/2017. 
  */
 exports.solve = function(fileName) {
-  let formula = propsat.readFormula(fileName)
+  let formula = readFormula(fileName)
   let result = doSolve(formula.clauses, formula.variables)
   return result // two fields: isSat and satisfyingAssignment
 }
